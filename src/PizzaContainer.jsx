@@ -22,7 +22,7 @@ function PizzaContainer()  {
     }
 
     const calculateHandler = event =>{
-        let operation = (count * slices) / PIZZA_SLICES;
+        let operation = Math.round((count * slices) / PIZZA_SLICES);
         setResult(operation);
     }
 
